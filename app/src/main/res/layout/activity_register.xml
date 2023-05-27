@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="148dp"
+        android:src="@drawable/eclipse"
+        android:id="@+id/R_img1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/R_img2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R_img1"
+        android:text="Welcome Onboard!"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/R_text1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R_text1"
+        android:text="Let’s help you meet up your tasks."
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font2"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:id="@+id/R_text2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/R_text2"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+
+
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:hint="Enter Your Full Name"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/R_edt_fullname"
+            android:fontFamily="@font/font2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:hint="Enter Your Email"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/font2"
+            android:id="@+id/R_edt_email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:hint="Create Password"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/font2"
+            android:id="@+id/R_edt_password"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:hint="Confirm Password"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/font2"
+            android:id="@+id/R_edt_confirmPassword"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="300dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/font1"
+        android:id="@+id/R_btn"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/R_btn"
+        android:id="@+id/ly_2"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:fontFamily="@font/font2"
+            android:textSize="12sp"
+            android:id="@+id/R_text3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Log in"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/secondaryColor"
+            android:textSize="12sp"
+            android:id="@+id/R_tv_to_login"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

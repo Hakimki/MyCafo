@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="228dp"
+        android:layout_height="201dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-81dp"
+        android:layout_marginTop="-75dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/foto2"
+        android:layout_width="-228dp"
+        android:layout_height="201dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-81dp"
+        android:layout_marginTop="-75dp"
+        android:layout_marginRight="-231dp"
+        android:rotationX="@android:integer/config_shortAnimTime"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:layout_below="@+id/foto"
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Cafo"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:fontFamily="@font/font1"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#252525"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TextView"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_below="@+id/garis"
+        android:id="@+id/H_ly1">
+
+        <Button
+            android:id="@+id/btn_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi"
+            android:background="@drawable/button_shape"
+            android:width="200dp"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"/>
+       
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:background="@drawable/button_shape"
+            android:width="200dp"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_meja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meja"
+            android:background="@drawable/button_shape"
+            android:width="200dp"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/H_ly1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:text="Log Out"
+        android:width="100dp"
+        android:fontFamily="@font/font2"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        />
+
+        
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128726263624",
+    "project_id": "mycafo-firebase",
+    "storage_bucket": "mycafo-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128726263624:android:bac98c5fc061584b55b57d",
+        "android_client_info": {
+          "package_name": "com.example.mycafo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128726263624-suqrbdt41unkk89ddda3jegol16ag3b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRE0MpOXPYehRgi7MA3r7tTwcHhqBpBrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128726263624-suqrbdt41unkk89ddda3jegol16ag3b6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="228dp"
+        android:layout_height="201dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-81dp"
+        android:layout_marginTop="-75dp"
+        android:src="@drawable/home"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/back"
+        />
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meja"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:fontFamily="@font/font1"
+        android:textColor="@color/black"
+        android:layout_marginVertical="45dp"/>
+
+    <ImageView
+        android:id="@+id/foto2"
+        android:layout_width="-228dp"
+        android:layout_height="201dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-81dp"
+        android:layout_marginTop="-75dp"
+        android:layout_marginRight="-231dp"
+        android:rotationX="@android:integer/config_shortAnimTime"
+        android:src="@drawable/home" />
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#252525"
+        android:layout_below="@+id/menuText"
+        android:layout_marginTop="-20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/garis"
+        android:id="@+id/M_ly1">
+
+        <Button
+            android:id="@+id/btn_tambah_meja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Meja"
+            android:background="@drawable/button_shape"
+            android:width="200dp"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_list_meja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List Meja"
+            android:background="@drawable/button_shape"
+            android:width="200dp"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+        />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

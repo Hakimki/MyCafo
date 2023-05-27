@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:layout_marginTop="20dp">
+
+
+
+
+        <TextView
+            android:id="@+id/tv_nama_meja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/font1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Nama Meja" />
+
+
+        <TextView
+            android:id="@+id/tv_deskripsi_meja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nama_meja"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:fontFamily="@font/font2"
+            tools:text="Deskripsi" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_ubah_meja"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ubah"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/btn_hapus_meja"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hapus"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
